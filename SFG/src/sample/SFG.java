@@ -238,7 +238,11 @@ public class SFG {
         }
         Point p=nonTouchingLoops(loops);
         ans/=(1-p.x+p.y);
-
+        System.out.println("Loops =  "+loops);
+        System.out.println("Note : the last element in every list is the loop gain");
+        System.out.println("paths =  "+paths);
+        System.out.println("Note :  the element precedes the last element in every list is the path gain");
+        System.out.println("Note : the last element in every list is the path delta");
         System.out.println("ans =  "+ans);
         return ans;
     }
